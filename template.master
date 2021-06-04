@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="template.master.cs" Inherits="template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+            <asp:ContentPlaceHolder id="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+
+                        <!--FOR CSS-->
+
+         <link href="master.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+div.myslides {
+  width:500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.myslides {
+  max-width:500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+</style>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+                                            <!--FOR NAVIGATION-->
+
+    
+                    
+    <div class="wrapper">
+        <a href="Home.aspx"><img src="IMG/logo.PNG" style="float: left; height: 50px; width: 160px; padding-right: 20px; padding-left: 10px;" /></a>
+      <!--This is navbar-->
+        <div class="navbar">
+      <div class="dropdown">
+            <button class="dropbtn">Central Govt. 
+            <i class="fa fa-caret-down"></i>
+            </button>
+    <div class="dropdown-content">
+      <a href="https://www.jeevandayee.gov.in/">Rajiv Gandhi Arogya Yojana </a>
+      <a href="https://pmjay.gov.in/"> Ayushman Bharat </a>
+      <a href="https://labour.gov.in/schemes/aam-admi-beema-yojana">Aam Aadmi Bima Yojana</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">State Govt. 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Northern.aspx">Northen India</a>
+      <a href="Southern.aspx">Southern India</a>
+      <a href="Central.aspx">Central India</a>
+      <a href="Northeastern.aspx">North-eastern India</a>
+      <a href="Western.aspx">Western India</a>
+       
+    </div>
+  </div> 
+        <a href="Eligibility.aspx" style="float:left"><i class="fa fa-id-card" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Eligibility</a>
+        <a href="Support.aspx" style="float:left"><i class="fa fa-medkit" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Support</a>
+         <a href="Feedback.aspx" style="float:left"><i class="fa fa-commenting" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Feedback</a>
+        <a href="Login.aspx" style="float:left"><i class="fa fa-sign-in" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Login/Signup </a>
+        <a href="Admin login.aspx" style="float:right;"><i class="fa fa-user" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Admin Login</a>
+</div>
+        <br />
+
+    <div class="clear"></div>
+    <div class="content">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="clear"></div>
+    </div>
+        </div>
+        <br />
+        <hr style="height:4px; background-color: red;"/>
+        <br />
+
+
+                          <!--FOR FOOTER-->
+
+    <div class="footer"style="position: static;padding:10px;background-color: white;color: red;text-align: center;">
+        <i class="fa fa-facebook" aria-hidden="true" style="padding-right:20px;font-size:25px;"></i>
+        <i class="fa fa-twitter" aria-hidden="true"style="padding-right:20px;font-size:25px;"></i>
+        <i class="fa fa-google-plus" aria-hidden="true"style="font-size:25px;"></i>    
+                          <p><u>Copyright@2020 india.gov.in
+                            <br/>Government of india.</u></p>
+       
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+
+    <!--For CSS-->
+
+     <link href="../master.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <style>
+div.myslides {
+  width:500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.myslides {
+  max-width:500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+</style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <img src="../IMG/logo.PNG" style="float: left; height: 50px; width: 160px; padding-right: 20px; padding-left: 10px;" />
+      <!--This is navbar-->
+        <div class="navbar">
+        <a href="Admin Dashboard.aspx" style="float:left"><i class="fa fa-bars" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Dashboard</a>
+        <a href="Scheme.aspx"style="float:left"><i class="fa fa-envelope" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Schemes</a>  
+        <a href="View User.aspx" style="float:left"><i class="fa fa-list" aria-hidden="true"style="font-size:20px;"></i>&nbsp; View User</a>
+        <a href="View Feedback.aspx" style="float:left"><i class="fa fa-sign-in" aria-hidden="true"style="font-size:20px;"></i>&nbsp; View Feedback</a>
+        <a href="../Home.aspx" style="float:left"><i class="fa fa-sign-out" aria-hidden="true"style="font-size:20px;"></i>&nbsp; Logout</a>
+</div>
+        <br />
+
+    <div class="clear"></div>
+    <div class="content">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="clear"></div>
+    </div>
+        <br />
+        <hr style="height:4px; background-color: red;"/>
+        <br />
+
+
+                          <!--FOR FOOTER-->
+
+    <div class="footer"style="position: static;padding:10px;background-color: white;color: red;text-align: center;">
+        <i class="fa fa-facebook" aria-hidden="true" style="padding-right:20px;font-size:25px;"></i>
+        <i class="fa fa-twitter" aria-hidden="true"style="padding-right:20px;font-size:25px;"></i>
+        <i class="fa fa-google-plus" aria-hidden="true"style="font-size:25px;"></i>    
+                          <p><u>Copyright@2020 india.gov.in
+                            <br/>Government of india.</u></p>
+       
+    </div>
+    </form>
+</body>
+</html>
